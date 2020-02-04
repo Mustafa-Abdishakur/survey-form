@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<link type="text/css" rel="stylesheet" href="form.css"> 
+</head>
+<body>
+<h1 id="title">Survey form</h1>
+<p id="description">Give us your feedback about the festival</p>
+<form id="survey-form">
+	<div>
+		<label id="name-label" for="name">Name:</label>
+		<input id="name" type="name" required placeholder="Enter name">
+	</div>
+	<div>
+		<label id="email-label" for="email">Email:</label>
+		<input id="email" type="Email" required placeholder="Enter email">
+	</div>
+	<div>
+		<label id="number-label" for="number">Age:</label>
+		<input id="number" type="number" required min="1" max="100" placeholder="Enter age">
+	</div>
+	<div>
+	<label for="dropdown">Martial status:   </label>
+	<select id="dropdown">
+		<option value="single">single</option>
+		<option value="maried">married</option>
+		<option value="divorced">divorced</option>
+	</select>
+	</div>
+	<div>
+		<p>How satisfied were you with our service (1 = not satified at all, 5 = very satified) :</p>
+		<input type="radio" name="satisfaction" value="1"> <label>1</label>
+		<input type="radio" name="satisfaction" value="2"> <label>2</label>
+		<input type="radio" name="satisfaction" value="3"> <label>3</label>
+		<input type="radio" name="satisfaction" value="4"> <label>4</label>
+		<input type="radio" name="satisfaction" value="5"> <label>5</label>
+	</div>
+	<div>
+		<p>Which of these did you enjoy the most (Select all that apply): </p>
+		<ul>
+			<li><input type="checkbox" value="Music"><label>Music</label></li>
+			<li><input type="checkbox" value="Food"><label>Food</label></li>
+			<li><input type="checkbox" value="Catering"><label>Catering</label></li>
+			<li><input type="checkbox" value="Games"><label>Games</label></li>
+			<li><input type="checkbox" value="group activites"><label>Group activites</label></li>
+			<li><input type="checkbox" value="Workshops"><label>Workshops</label></li>
+		</ul>
+	</div>
+
+	<div class="suggestions-container">
+		<label>Any comment or suggestion?</label>
+		<textarea id='suggestion'></textarea></br>
+	</div>
+
+<input type="submit" id="submit">
+
+</form>
+</body>
+</html>

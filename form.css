@@ -1,0 +1,60 @@
+html{ 
+    background:pink;
+    font-family: sans-serif;
+
+   }
+   body{
+       background:white;
+       width:70vw;
+       margin:auto;
+       border-radius:2%;
+
+   padding:0;
+   }
+   #title , #description, #survey-form{
+       text-align: center;
+
+   }
+   div{
+       margin:20px;
+   }
+   #name, #email, #number{
+       width:200px;
+       height:25px;
+   }
+   #dropdown{
+       width:90px;
+       height:30px;
+   }
+   ul {
+       list-style-type:none;
+       text-align: left;
+       display:flex;
+       justify-content: center;
+
+   }
+   ul li{
+       margin-right:10px;
+   }
+   #submit{
+       position:relative;
+       left:40%;
+       bottom:50px;
+       width:90px;
+       height:50px;
+       font-size:16px;
+       background:pink;
+       border:1px solid white;
+       font-weight:bold;
+       border-radius:10%;
+       cursor:pointer;
+       transition:transform 0.5s;
+   }
+   #submit:hover{
+       transform: scale(1.1);
+   }
+
+   .suggestions-container #suggestion{
+       position:relative;
+       top:10px;
+   }
